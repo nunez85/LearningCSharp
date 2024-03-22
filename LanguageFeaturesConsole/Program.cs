@@ -17,5 +17,10 @@ Console.WriteLine("Creating another chain:");
 Example anotherChain = (Example)Two + Three;
 anotherChain.Invoke();
 
+Console.WriteLine("Creating a lambda chain:");
+Example lambdaChain = () => Console.WriteLine("Hello!");
+lambdaChain += () => Console.WriteLine("Good bye now :)");
+
+
 // Needs to be all he way down for some reason
 delegate void Example();
