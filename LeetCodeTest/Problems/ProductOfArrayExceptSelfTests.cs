@@ -10,7 +10,7 @@ public class ProductOfArrayExceptSelfTests {
 
     [Test]
     public void Test2() {
-        int[] expected = [-1,1,0,-3,3];
+        int[] expected = [0,0,9,0,0];
         int[] actual = ProductOfArrayExceptSelf.Solution([-1,1,0,-3,3]);
         Assert.That(expected, Is.EqualTo(actual));
     }
